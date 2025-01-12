@@ -18,10 +18,10 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
         EXCLUDE: "/.git/, /.github/, /local_ssh*sh"
-        SCRIPT_BEFORE: |
-          whoami
-          ls -al
-        SCRIPT_AFTER: |
-          whoami
-          ls -al
-          echo $RSYNC_STDOUT
+        # SCRIPT_BEFORE: |
+        #   whoami
+        #   ls -al
+        # SCRIPT_AFTER: |
+        #   whoami
+        #   ls -al
+        #   echo $RSYNC_STDOUT
